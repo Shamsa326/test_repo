@@ -1,0 +1,43 @@
+PYTHON:
+ is programming language that easy to learn, high level and widely used in several projects.
+
+
+Advantages Vs Disadvantages of Python
+
+Advantages:
+1. Easy to read and learn 
+2. Free and Open Source
+3. Implementing in projects 
+
+
+Disadvantages:
+
+1. Slow Speed 
+2. Poor Database Access 
+3. showing the errors after running code
+
+
+
+
+# Pseudo code :
+# it is the step by step in descriping an algorithm before writing the code, there is no syntx on it.
+# it is intermidate stage between idea and code.
+
+
+# Implement a pseudo code for reading a file:
+
+
+#Set the file 
+
+Start 
+
+open "Store.textfile"
+
+if file is not opened 
+print "file is not open"
+else read line 
+     display line 
+
+close file 
+End 
+    
