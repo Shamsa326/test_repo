@@ -18,4 +18,5 @@ def text_price (text,price_letter):
            "price_of_string": price
              }
 
+#test the function
 print(text_price("Shamsa", 2))
