@@ -2,7 +2,6 @@
 
 #Game 2048
 
-#
 import random
 
 # create board
@@ -13,7 +12,7 @@ board = [
     [0, 0, 0, 0]
 ]
 
-# 2. add a random tile
+# add a random tile
 def add_tile():
     pos = []
     for i in range(4):
@@ -24,13 +23,13 @@ def add_tile():
         i, j = random.choice(pos)
         board[i][j] = 2
 
-# 3. show board
+# Show board to player
 def show():
     for row in board:
         print(row)
     print()
 
-# 4. move LEFT
+#move LEFT
 def move_left():
     for i in range(4):
         row = [x for x in board[i] if x != 0]  # remove zeros
@@ -43,8 +42,7 @@ def move_left():
         row = [x for x in row if x != 0]        # remove zeros again
         board[i] = row + [0] * (4 - len(row))   # fill with zeros
 
-# start game
-add_tile()
+# start game calling to add tile
 add_tile()
 
 while True:
