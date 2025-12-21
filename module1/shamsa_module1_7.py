@@ -5,7 +5,7 @@
 def accept_string (value):
         
     try:
-        value.upper()
+        value.isalpha()
         print(value)
         return value
     except Exception:
@@ -13,5 +13,5 @@ def accept_string (value):
         return None
 
 #test both scenarios
-accept_string("SHAMSA")
-accept_string(111)
+accept_string("Shamsa")
+accept_string(971)
