@@ -3,7 +3,7 @@
 
 from fastapi import FastAPI
 
-#create fastAPI application (app it the main function that will handle all requests)
+#create fastAPI application (app is the main function that will handle all requests)
 
 app=FastAPI()
 

@@ -18,7 +18,6 @@ class Message(BaseModel):
 @app.post("/message")
 
 def create_message(data: Message):
-    
     return {
         "message": data.text
     }
@@ -26,8 +25,8 @@ def create_message(data: Message):
 #Now run the server in the terminal:
 #>> in the terminal : uvicorn shamsa_module3_3:app --reload
 
-#Test API in command prompt:
-#curl -X POST "http://127.0.0.1:8000/message?message=Hello%20Hana"
+#Test API in :
+#http://127.0.0.1:8000/docs
 
 
 #End
