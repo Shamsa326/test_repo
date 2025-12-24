@@ -40,10 +40,13 @@ def read_person_with_random():
         "random_number": random_number
 
        }
-    
+
     
 #Now run the server in the terminal:
 #>> in the terminal : uvicorn shamsa_module3_4:app --reload
 #
-#
+#Test API in :
+#http://127.0.0.1:8000/docs
+
+
 #End
