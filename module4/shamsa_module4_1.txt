@@ -1,0 +1,22 @@
+
+
+What is SQL ?
+is (Structured Query Lanugaue) programming lanugaue designed for manage, manipulate,store and retrieve relational databases. 
+
+Why we use it?
+ it helps to work with a large amounts of data :
+ -create databases and tables
+ -Insert new data
+ -read (query) data
+ -update existing data
+ -Delete data 
+
+
+Who made it?
+SQL was developed in the early 1970s by IBM.
+The main creators were Donald D. Chamberlin and Raymond F. Boyce.
+
+
+
+
+    
