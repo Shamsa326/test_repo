@@ -11,7 +11,7 @@ app=FastAPI()
 
 DB_NAME = "tasks.db"
 
-#onnect to the Sql3 db and return that connection.
+#connect to the Sql3 db and return that connection.
 
 def get_db_connection():
     return sqlite3.connect(DB_NAME)
