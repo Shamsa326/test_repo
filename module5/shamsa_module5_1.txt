@@ -1,0 +1,125 @@
+
+
+>> what is AI ? 
+
+AI:means making computers think and act like humans.
+It allows machines to: learn from data/make decisions/understand language/recognize images/solve problems.
+
+
+>> What is LLM ?
+
+is a type of AI that specializes in understanding and generating text (language),
+LLMs are trained on huge amounts of text data (books, articles, code, conversations).
+LLM can:Answer questions/Write emails and stories/Explain code/Translate languages/Generate Python /SQL code/Chat like a human
+
+
+>> What is LLM model size ?
+
+LLM model size = number of learned parameters that determine how smart, powerful, and resource-heavy the model is.
+Parameters = numbers the model learn
+Think of a model like a brain:
+Small model → small notebook
+Medium model → big book
+Large model → entire library
+
+>> what is token and how does tokenization work ? 
+
+A token is a small piece of text that an AI model reads and processes. 
+A token can be:a word/part of a word/a character/punctuation or even a space
+Tokenization is the process of breaking text into tokens so the model can understand it.
+It converts human text → numbers (token IDs).
+
+>> what are parameters in an LLM ? How do they relate to size ? 
+
+Parameters are the learned numbers inside the model that store knowledge.
+They are mainly:
+-weights
+-biases
+used inside neural network layers.
+parameters help the model decide things like: which word comes next/how related two words are/grammar rules/meaning/context.
+parameters relate to model size by : Model size = number of parameters
+
+>> what is model fine tune ?
+
+Taking a pre-trained model and training it again on your own data so it becomes better at a specific task.
+
+>> what is prompt engineering ? difference between prompt engineering and fine tune ? 
+
+Prompt engineering is the skill of writing good instructions (prompts) so an AI gives better result.
+The difference is prompt engineering controls how you ask the model, while fine tuning changes how the model behaves by updating its learned parameters.
+ 
+>>what are embedding why are they important ? 
+
+Embeddings are numerical vector representations of data (text, words, images, etc.) that capture meaning.
+it is important because computers cannot understand meaning directly, but they can work with numbers.
+Embeddings allow machines to:compare meanings/search semantically/group similar concepts/retrieve relevant information/understand context.
+
+>> what is context windows of an LLM? why it matter in coding or dealing with LLM ? 
+The context window is the maximum number of tokens an LLM can “see” at one time.
+in simple definition Context window = the model’s short-term memory size (measured in tokens).
+Why context window matters:
+-Memory limit → model can only remember what fits inside the window
+-Conversation continuity → older messages are forgotten if window is exceeded
+-Code understanding → larger window = better understanding of long files
+-Document handling → limits how many pages/chunks can be read
+-RAG quality → controls how much retrieved data can be used
+-Avoids truncation → prevents missing or cut-off output
+-Cost control → more tokens = higher cost
+-Performance impact → larger context can be slower
+-Accuracy & consistency → more context → fewer hallucinations
+
+>> what is LLM helicunations? what are limitation of LLMs ? 
+
+LLM hallucinations happen when a model gives an answer that sounds correct but is actually false, made-up, or not supported by facts.
+
+limitations:
+1-LLMs can produce incorrect or made-up answers (hallucinations).
+2-LLMs do not truly understand meaning; they only predict patterns.
+3-LLMs have a limited context window and may forget earlier information.
+4-LLMs can be biased based on their training data.
+5-LLMs cannot always verify facts or access real-time information.
+
+
+>> How can LLM interact with computers ? what is RAG ? 
+ways an LLM interacts with a computer:
+APIs:
+1-APIs:
+The LLM sends or receives data through APIs.
+Example: calling a database, weather API, or backend service.
+
+2-Code execution:
+LLM generates code (Python, SQL, etc.)
+The system runs the code and returns results.
+
+3-Tool calling / function calling:
+LLM chooses a tool (search, calculator, database).
+Tool executes the action.
+Result is sent back to the LLM.
+
+4-File interaction
+Read/write files (text, CSV, JSON).
+Process documents.
+
+5-Operating system automation
+Via agents or scripts that control apps, browsers, or terminals.
+
+RAG is a technique that allows LLMs to use external documents when answering questions.
+
+>> Find 3 best Framework to start coding with LLM ?
+
+1-LangChain:
+A full-stack framework for building LLM applications. It connects language models with:
+external data sources (APIs, databases)
+memory & session handling
+prompt tools
+agent workflows
+LangChain makes it easy to orchestrate complex AI pipelines and multi-step logic.
+
+2-LlamaIndex:
+A data-centric framework that helps you ingest, index, and query your own documents with LLMs.
+It’s especially useful for Retrieval-Augmented Generation (RAG), 
+where the model answers based on your custom data (PDFs, SQL, etc.).
+
+3-Haystack:
+An open-source LLM orchestration framework for building flexible AI applications with search and RAG.
+It lets you integrate models, vector DBs, document loaders, and pipelines into production-ready solutions.
