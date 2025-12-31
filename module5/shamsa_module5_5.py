@@ -20,7 +20,7 @@ user_message = {
 
 # Settings for model behavior
 options = {
-    "temperature": 1 ,   # creativity level
+    "temperature": 0.5 ,   # creativity level
     "num_ctx": 4096       # context window size
 }
 
@@ -42,4 +42,5 @@ result = response.json()
 # Output
 print("\nOllama says:")
 print(result["message"]["content"])
+
 
