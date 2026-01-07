@@ -1,0 +1,23 @@
+
+
+# Use official Python image
+FROM python:3.12-slim
+
+# Set working directory
+WORKDIR /app
+
+# Copy your code
+COPY shamsa_module7_4.py .
+
+# Run the program
+CMD ["python", "shamsa_module7_4.py"]
+
+
+
+
+# RUN IN TERMINAL :
+# docker buildx build --load -f Dockerfile4 -t shamsa_ex4:1.0.0 .
+
+# to save my image:
+# docker save shamsa_ex4:1.0.0 -o shamsa_ex4.tar
+

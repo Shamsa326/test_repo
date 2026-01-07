@@ -22,5 +22,5 @@ CMD ["python", "shamsa_module7_2.py"]
 # to save my image:
 # docker save shamsa_ex2:1.0.0 -o shamsa_ex2.tar
 
-#to load my image (future)
-# docker load -i shamsa_ex1.tar
+#to load my image (in future)
+# docker load -i shamsa_ex2.tar
