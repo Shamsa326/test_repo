@@ -13,7 +13,7 @@ def health_server():
     }
 
 @app.get("/")
-def root():
+def home():
     return {"message": "FastAPI server is running"}
 
 

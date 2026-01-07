@@ -14,16 +14,24 @@ RUN pip install --no-cache-dir -r req.txt
 COPY shamsa_module7_3.py .
 
 # Run the program
-CMD ["uvicorn", "shamsa_module7_3:app", "--host", "127.0.0.1", "--port", "8000"]
+CMD ["uvicorn", "shamsa_module7_3:app", "--host", "0.0.0.0", "--port", "8000"]
 
 EXPOSE 8000
 
-# RUN IN TERMINAL :
+# RUN IN TERMINAL (command prompt) :
 # docker buildx build --load -f Dockerfile3 -t shamsa_ex3:1.0.0 .
 
-
 # run the image from terminal 
-# docker run -d -p 8000:8000 shamsa_ex3:1.0.0    
+# docker run -d -p 8000:8000 shamsa_ex3:1.0.0 
+
+
+# 2) in powershell terminal:
+# docker build --no-cache -f Dockerfile3 -t shamsa_ex3:fixed .
+# docker run -d -p 8000:8000 shamsa_ex3:fixed 
+# then type in terminal : docker ps
+#then type in terminal: docker logs containerID
+# iwr http://localhost:8000 
+
 
 # to save my image:
 # docker save shamsa_ex3:1.0.0 -o shamsa_ex3.tar
