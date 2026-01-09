@@ -22,7 +22,7 @@ def random_number():
     return random_num
 
 
-# run MCP server
+#run MCP server
 if __name__ == "__main__":
     mcp.run(transport="streamable-http")
 
@@ -31,5 +31,8 @@ if __name__ == "__main__":
 # pip install fastmcp
 # npx @modelcontextprotocol/inspector
 
+# run in terminal :
+# python shamsa_module8_1.py
+# open cmd and type : npx @modelcontextprotocol/inspector
 
 
