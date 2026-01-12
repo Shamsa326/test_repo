@@ -14,8 +14,6 @@ url= "http://localhost:11434/api/generate"
 # create mcp tool:
 @mcp.tool()
 def Ask(question:str):
-    # question = input("Enter your question:")
-
     # Data sent to Ollama
     data = {
         "model": "llama3.1",
@@ -32,6 +30,9 @@ def Ask(question:str):
 # run MCP server
 if __name__ == "__main__":
     mcp.run(transport="streamable-http")
+
+
+
 
 
 

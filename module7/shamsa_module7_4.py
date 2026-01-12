@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS users (
 names = ["Shamsa", "Hana", "Saeed", "Theyab"]
 
 def rand_phone():
-    phone = "05"
+    phone = "50"
     for _ in range(8):
         phone += random.choice("0123456789")
     return phone
