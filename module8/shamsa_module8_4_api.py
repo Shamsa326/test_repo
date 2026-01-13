@@ -5,8 +5,6 @@ import sqlite3
 
 app = FastAPI()
 
-# MCP_URL = "http://mcp:9000"   # MCP docker service name
-
 @app.get("/status")
 def status():
     return {"status": "ok"}
@@ -32,8 +30,6 @@ def list_user_info():
     cursor=conn.cursor()
     cursor.execute("SELECT * FROM users")
     rows= cursor.fetchall()
-    # for row in rows:
-    #     print(row)
     return rows
 
 @app.get("/adduser")
