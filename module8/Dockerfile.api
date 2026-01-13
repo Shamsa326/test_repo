@@ -1,8 +1,24 @@
+# Use official Python image
+FROM python:3.12-slim
 
-
-FROM python:3.11-slim
+# Set working directory
 WORKDIR /app
-RUN pip install fastapi uvicorn requests
+
+COPY req.txt .
+RUN pip install --no-cache-dir -r req.txt
+
+# Copy your code
 COPY shamsa_module8_4_api.py .
 
-CMD ["uvicorn", "api_server:app", "--host", "0.0.0.0", "--port", "8000"]
+# Run the program
+CMD ["uvicorn", "shamsa_module8_4_api:app", "--host", "0.0.0.0", "--port", "8000"]
+
+EXPOSE 8000
+
+
+# RUN IN TERMINAL (command prompt) :
+# docker buildx build --load -f Dockerfile.api -t ex4:1.0.0 .
+
+# run the image from terminal 
+# docker run -d -p 8000:8000 ex4:1.0.0 
+
